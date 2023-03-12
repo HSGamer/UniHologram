@@ -4,6 +4,7 @@ import me.hsgamer.unihologram.common.api.Hologram;
 import me.hsgamer.unihologram.common.api.HologramProvider;
 import me.hsgamer.unihologram.spigot.decentholograms.provider.DHHologramProvider;
 import me.hsgamer.unihologram.spigot.holographicdisplays.provider.HDHologramProvider;
+import me.hsgamer.unihologram.spigot.protocollib.provider.ProtocolLibHologramProvider;
 import me.hsgamer.unihologram.spigot.vanilla.provider.VanillaHologramProvider;
 import org.bukkit.Location;
 import org.bukkit.plugin.Plugin;
@@ -30,6 +31,8 @@ public class SpigotHologramProvider implements HologramProvider<Location> {
             provider = new DHHologramProvider();
         } else if (HDHologramProvider.isAvailable()) {
             provider = new HDHologramProvider(plugin);
+        } else if (ProtocolLibHologramProvider.isAvailable()) {
+            provider = new ProtocolLibHologramProvider(plugin);
         } else {
             provider = new VanillaHologramProvider();
         }

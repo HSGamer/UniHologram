@@ -13,6 +13,7 @@
         <module>common</module>
         <module>decentholograms</module>
         <module>holographicdisplays</module>
+        <module>protocollib</module>
         <module>vanilla</module>
         <module>bundle</module>
         <module>test</module>
