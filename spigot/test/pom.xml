@@ -12,7 +12,7 @@
     <artifactId>uni-hologram-spigot-test</artifactId>
 
     <properties>
-        <core.version>4.2.12</core.version>
+        <core.version>4.2.13</core.version>
     </properties>
 
     <build>
